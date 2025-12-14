@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>I'm lonely</title>
+    <style>
+    html, body 
+    {
+        margin: 0;
+        height: 100%;
+        background-color: #b0b0b0;
+    }
+
+  /* 这是画布的css */
+    .canvas
+    {
+        width: 70%;          /* 占页面宽度 70% */
+        height:  calc(100vh - 80px);      /* 一屏高 - 往下移动的距离（这里举例 80px） */
+        margin: 80px auto 0;       /* 上 80px，左右 auto（居中），下 0 */
+
+        background: rgba(255,255,255,0.9);  /* 画布背景（白布效果，可改成 #fff） */
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border-radius: 12px;
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="canvas"><!--内容在这里面写-->
+
+    </div>
 </body>
 </html>
