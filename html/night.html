@@ -11,13 +11,30 @@
         height: 100%;
         background-color: #b0b0b0;
     }
-
+    .header 
+    {
+            margin: 0 auto;
+            text-align: center;
+            position: fixed;   /*固定在视口上*/
+            top: 0;           
+            background-color: rgb(255, 255, 255); 
+            z-index: 300;   /* 设置层叠顺序,越大显示的优先级越高 */
+            width: 100%;
+            height: 140px;
+    }
+    /* 这是调节字体大小的css */
+    .big-text 
+    {
+        text-align: center; /* 文本水平居中对齐 */
+        font-size: 48px;    /* 自己想要的大小 */
+        font-weight: bold;  /* 想加粗就加，不想加粗就删掉 */
+    }
   /* 这是画布的css */
     .canvas
     {
         width: 70%;          /* 占页面宽度 70% */
         min-height:  100vh;       /* 最少一屏高 */
-        margin: 80px auto 0;      /* 整块往下移 80px，水平居中 */
+        margin: 140px auto 0;      /* 整块往下移 80px，水平居中 */
         
         background: rgba(255,255,255,0.9);  /* 画布背景（白布效果，可改成 #fff） */
         box-shadow: 0 0 20px rgba(0,0,0,0.3);   /* 外阴影：模糊半径 20px、颜色半透明黑，看起来像漂浮在背景上 */
@@ -26,8 +43,21 @@
     </style>
 </head>
 <body>
+
+    <div class="header">
+        <h1 class="big-text">
+            欢迎来到我的网站
+        </h1>
+    </div>
+
     <div class="canvas"><!--内容在这里面写-->
-        
+
+        <div class="big-text">
+            <h1>
+                大学生自救指南
+            </h1>
+        </div>
+
     </div>
 </body>
 </html>
